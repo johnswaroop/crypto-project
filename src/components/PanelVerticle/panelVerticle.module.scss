@@ -1,0 +1,14 @@
+@import "./../../scss/variables";
+.panelVerticle {
+    display: flex;
+    flex-direction: column;
+    width: ($panel-full-width/3.25);
+    background: $bg-panel;
+    border: 6px solid #ffffff;
+    box-sizing: border-box;
+    box-shadow: 10px 4px 50px 10px rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    padding: $spacer;
+    box-sizing: border-box;
+    gap: $spacer;
+}

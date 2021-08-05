@@ -1,0 +1,55 @@
+@import "./../../scss/variables";
+
+.iconChip {
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+.iconContainer {
+    display: flex;
+    height: 3.5rem;
+    box-sizing: border-box;
+    border-radius: 100%;
+    border: 3px solid $border-color;
+    padding: 0.5rem;
+    margin-right: ($spacer/2.5);
+
+    img {
+        object-fit: contain;
+    }
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    p,
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title {
+        font-family: $font;
+        color: $highlight-text-color;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: ($spacer/8);
+    }
+
+    .input {
+        display: flex;
+        width: ($panel-full-width/8);
+        input {
+            width: inherit;
+            border: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-top: 0.1rem;
+            &:focus {
+                outline: none;
+            }
+        }
+        border-bottom: 3px solid $border-color;
+    }
+}

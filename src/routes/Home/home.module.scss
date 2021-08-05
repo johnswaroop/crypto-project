@@ -1,0 +1,21 @@
+@import "./../../scss/variables.scss";
+
+.chips {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panelOne {
+    margin-top: 5rem;
+}
+
+.panelTwo {
+    margin-top: 2.5rem;
+}
+
+.panelThree {
+    display: flex;
+    width: $panel-full-width;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}

@@ -1,0 +1,14 @@
+@import "./../../scss/variables.scss";
+.content {
+    display: flex;
+    height: $content-heigth;
+    width: 100%;
+    background: $bg-gradient;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chips {
+    display: flex;
+    justify-content: space-between;
+}
