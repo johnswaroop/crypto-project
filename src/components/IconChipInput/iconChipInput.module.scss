@@ -38,6 +38,7 @@
     }
 
     .input {
+        transition: all 0.35s ease-in-out;
         display: flex;
         width: ($panel-full-width/8);
         input {
@@ -46,10 +47,22 @@
             font-size: 0.95rem;
             font-weight: 500;
             margin-top: 0.1rem;
+
             &:focus {
                 outline: none;
             }
         }
         border-bottom: 3px solid $border-color;
+
+        &:hover {
+            border-bottom: 3px solid $border-color-hover;
+        }
+    }
+}
+
+.textContainerFocus {
+    @extend .textContainer;
+    .input {
+        border-bottom: 3px solid $border-color-hover;
     }
 }

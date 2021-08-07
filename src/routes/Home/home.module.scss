@@ -7,10 +7,12 @@
 
 .panelOne {
     margin-top: 5rem;
+    animation: appear 0.35s forwards ease-in-out;
 }
 
 .panelTwo {
     margin-top: 2.5rem;
+    animation: appear 0.35s forwards ease-in-out;
 }
 
 .panelThree {
@@ -18,4 +20,14 @@
     width: $panel-full-width;
     justify-content: space-between;
     margin-top: 2.5rem;
+    animation: appear 0.3s forwards ease-in-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

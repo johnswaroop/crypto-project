@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import assets from '../../assets';
 import styles from './iconChipInput.module.scss'
 
@@ -9,15 +9,22 @@ interface Props {
 }
 
 const IconChipInput: FC<Props> = ({ title, value, icon }) => {
+
+    const [inFocus, setInFocus] = useState<boolean>(false);
+
+    const handleFocus = () => {
+        setInFocus(f => !f);
+    }
+
     return (
         <span className={styles.iconChip}>
             <span className={styles.iconContainer}>
                 <img src={icon ? icon : assets.bnbIcon} />
             </span>
-            <span className={styles.textContainer}>
+            <span className={inFocus ? styles.textContainerFocus : styles.textContainer} >
                 <p className={styles.title}>{title}</p>
                 <span className={styles.input}>
-                    <input type="text" placeholder={"12345"} />
+                    <input type="text" placeholder={"12345"} onFocus={handleFocus} onBlur={handleFocus} />
                 </span>
             </span>
 
