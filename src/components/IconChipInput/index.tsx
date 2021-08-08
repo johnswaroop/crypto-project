@@ -25,6 +25,9 @@ const IconChipInput: FC<Props> = ({ title, value, icon }) => {
                 <p className={styles.title}>{title}</p>
                 <span className={styles.input}>
                     <input type="text" onFocus={handleFocus} onBlur={handleFocus} />
+                    <span className={inFocus ? styles.customBorderFocus : styles.customBorder}>
+                        <span></span>
+                    </span>
                 </span>
             </span>
 

@@ -21,13 +21,17 @@ body {
     padding: 0;
 }
 
+.app {
+    position: relative;
+}
+
 :root {
     --bg-gradient: linear-gradient(180deg, rgba(0, 178, 255, 0.19) 0%, rgba(36, 255, 178, 0.13) 99.98%);
     --bg-panel: white;
     --highlight-text-color: #008162;
     --text-color: rgb(161, 161, 161);
     --border-color: #9cfaeb;
-    --border-color-hover: #79c7ba;
+    --border-color-hover: #007562;
     --bg-nav: #f1fbff;
     --bg-wallet: #c7fff6;
 }

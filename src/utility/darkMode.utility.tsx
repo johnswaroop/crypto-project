@@ -21,7 +21,6 @@ const darkModeStyles: object = {
 }
 
 
-
 const darkModeUtility = ((currentMode: boolean) => {
     let root = document.documentElement
     if (!currentMode) {

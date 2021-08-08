@@ -6,11 +6,13 @@ import InputBox from '../../components/InputBox';
 import styles from './home.module.scss'
 import IconChip from '../../components/IconChip';
 import IconChipInput from '../../components/IconChipInput';
+import PopUp from '../../components/PopUp';
 
 const Home: FC = () => {
     return (
         <div>
             <Content>
+                <PopUp></PopUp>
                 <section className={styles.panelOne}>
                     <PanelFullWidth>
                         <InputBox />
