@@ -41,21 +41,24 @@
         transition: all 0.35s ease-in-out;
         display: flex;
         width: ($panel-full-width/8);
+
         input {
             width: inherit;
             border: none;
             font-size: 0.95rem;
             font-weight: 500;
             margin-top: 0.1rem;
+            background: transparent;
+            color: $text-color;
 
             &:focus {
                 outline: none;
             }
         }
-        border-bottom: 3px solid $border-color;
+        border-bottom: 2px solid $border-color;
 
         &:hover {
-            border-bottom: 3px solid $border-color-hover;
+            border-bottom: 2px solid $border-color-hover;
         }
     }
 }

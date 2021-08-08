@@ -7,5 +7,7 @@ import help from './help.png'
 import close from './close.png'
 import nextIcon from './next.png'
 import prevIcon from './prev.png'
+import lightMode from './lightMode.png'
+import darkMode from './darkMode.png'
 
-export default { logo, bnbIcon, loading, success, failed, help, close, nextIcon, prevIcon }
+export default { logo, bnbIcon, loading, success, failed, help, close, nextIcon, prevIcon, lightMode, darkMode }
