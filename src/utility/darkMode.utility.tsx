@@ -6,7 +6,8 @@ const lightModeStyles: object = {
     '--border-color': '#9cfaeb',
     '--border-color-hover': '#79c7ba',
     '--bg-nav': '#f1fbff',
-    '--bg-wallet': '#c7fff6'
+    '--bg-wallet': '#afafaf',
+    '--input-shadow': '0px 0px 25px 3px rgba(0, 0, 0, 0.125);'
 }
 
 const darkModeStyles: object = {
@@ -14,10 +15,11 @@ const darkModeStyles: object = {
     '--bg-panel': 'black',
     '--highlight-text-color': '#9CFAEB',
     '--text-color': 'white',
-    '--border-color': '#9CFAEB',
-    '--border-color-hover': 'white',
+    '--border-color': '#00977e',
+    '--border-color-hover': '#5bffe4',
     '--bg-nav': 'black',
-    '--bg-wallet': '#008871'
+    '--bg-wallet': '#e4fffb',
+    '--input-shadow': '0px 0px 15px rgba(0, 209, 199, 0.61)'
 }
 
 
